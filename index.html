@@ -5,40 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>MUSIC PLAYER|INDEX</title>
 </head>
 
 <body>
-    <div class="main-container">
-        <section class="home-section">
-            <div class="container">
-                <div class="navbar">
-                    <ul>
-                        <a href="playlist.html">
-                            <li>Playlist</li>
-                        </a>
-                        <a href="index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="quizz.html">
-                            <li>Quiz</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="home-text">
-                    <h1>Trending</h1>
-                    <h2>Songs</h2>
-                </div>
-                <div class="home-img">
-                    <div class="img-box">
-                    <img src="images/zayn-malik-1.jpg" alt="zayn-malik">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+    <section id="hero">
+        <header>
+            <a href="#"><img src="images/" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="playlist.html">Playlist</a></li>
+                <li><a href="quizz.html">Quiz</a></li>
 
+            </ul>
+        </header>
+        <div class="content">
+             <div class="textbox">
+                <h2>Trending<br><span>Songs</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, voluptatum neque! Enim soluta sint commodi repellendus explicabo, aperiam dolor laboriosam! Nostrum, quo! Officia eius pariatur dicta nemo ut! Asperiores, ducimus.</p>
+                <a href="#" id="playlist">Playlist</a>
+             </div>
+             <div class="imgBox">
+                <img src="images/arjit-singh2.jpg" alt="" class="singer">
+             </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/arjit-singh2.jpg" alt=""onclick="imgSlider('images/arjit-singh2.jpg')"></li>
+            <li><img src="images/zayn-malik-1.jpg" alt=""onclick="imgSlider('images/zayn-malik-1.jpg')"></li>
+            <li><img src="images/pasoori.jpg" alt=""onclick="imgSlider('images/pasoori.jpg')"></li>
+        </ul>
+
+    </section>
+    <script>
+        function imgSlider(anything){
+          document.querySelector('.singer')  .src=anything;
+        }
+    </script>
 </body>
 
 </html>
