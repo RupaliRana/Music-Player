@@ -23,26 +23,36 @@
             </ul>
         </header>
         <div class="content">
-             <div class="textbox">
-                <h2>Trending<br><span>Songs</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, voluptatum neque! Enim soluta sint commodi repellendus explicabo, aperiam dolor laboriosam! Nostrum, quo! Officia eius pariatur dicta nemo ut! Asperiores, ducimus.</p>
+            <div class="textbox">
+                <h2 class=>Trending<br><span>Songs</span></h2>
+
                 <a href="#" id="playlist">Playlist</a>
-             </div>
-             <div class="imgBox">
-                <img src="images/arjit-singh2.jpg" alt="" class="singer">
-             </div>
+            </div>
+            <div class="imgBox">
+                <img src="images/shersha.webp" alt="" class="singer">
+            </div>
         </div>
+        <!--<ul class="text">
+            <li><h2 onclick="textSlider('Rock N Roll')">Rock N ROLL</h2></li>
+            <li><h2 onclick="textSlider('Rock N Roll')">old N ROLL</h2></li>
+            <li><h2 onclick="textSlider('Rock N Roll')">POP N ROLL</h2></li>
+        </ul>-->
         <ul class="thumb">
-            <li><img src="images/arjit-singh2.jpg" alt=""onclick="imgSlider('images/arjit-singh2.jpg')"></li>
-            <li><img src="images/zayn-malik-1.jpg" alt=""onclick="imgSlider('images/zayn-malik-1.jpg')"></li>
-            <li><img src="images/pasoori.jpg" alt=""onclick="imgSlider('images/pasoori.jpg')"></li>
+            <li><img src="images/shersha.jpg" onclick="imgSlider('images/shersha.jpg')"></li>
+            <li><img src="images/zayn2.jpg" alt="" onclick="imgSlider('images/zayn2.jpg')"></li>
+            <li><img src="images/srk.jpg" alt="" onclick="imgSlider('images/srk.jpg')"></li>
+            <li><img src="images/blackwhite.jpg" alt="" onclick="imgSlider('images/blackwhite.jpg')"></libs>
         </ul>
 
     </section>
     <script>
-        function imgSlider(anything){
-          document.querySelector('.singer')  .src=anything;
+        function imgSlider(anything) {
+            document.querySelector('.singer').src = anything;
         }
+        function textSlider(anything) {
+            document.querySelector('.main-text').src = anything;
+        }
+
     </script>
 </body>
 
