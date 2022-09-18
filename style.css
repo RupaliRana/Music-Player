@@ -30,7 +30,7 @@ body {
 
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right, #a6c1ee, #fbc2eb );
+    background-image: linear-gradient(to bottom right, #a6c1ee, #fbc2eb);
     background-color: #5d69be;
     background-size: cover;
     background-position: center;
@@ -121,7 +121,8 @@ header li:hover a {
 .content .textbox {
     position: relative;
     max-width: 400;
-
+    flex-wrap: wrap;
+    vertical-align: middle;
 }
 
 .content .textbox h2 {
@@ -134,20 +135,24 @@ header li:hover a {
     padding: 0 10px 10px 30px;
 }
 
-.content .textbox h2 span {
-    font-size: 2em;
-}
-
-.content .textbox p {
+.content .textbox h3 {
     color: #fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: auto;
     padding: 0 10px 10px 30px;
+
+    font-size: 4rem;
 }
 
-.content .textbox a {
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 30px;
-    padding: 8px 30px;
+
+.content a {
+   
+    box-shadow: 0 10px 10px 0 var(--main-color-alpha);
+    margin: 8px 30px;
+    padding: 10px 30px;
     background: #fff;
     color: #111;
     border-radius: 40px;
@@ -156,7 +161,7 @@ header li:hover a {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
-
+    line-height: 1.5em;
 }
 
 #playlist:hover {

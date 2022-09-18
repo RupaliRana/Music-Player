@@ -24,12 +24,13 @@
         </header>
         <div class="content">
             <div class="textbox">
-                <h2 class=>Trending<br><span>Songs</span></h2>
-
-                <a href="#" id="playlist">Playlist</a>
+                <h2 class="main-text">Trending</h2>
+                <h3 class="sub-text">Songs</h3>
+                <a href="#" id="playlist">Playlist</a>   
             </div>
+            
             <div class="imgBox">
-                <img src="images/shersha.webp" alt="" class="singer">
+                <img src="images/shersha.jpg" alt="" class="singer">
             </div>
         </div>
         <!--<ul class="text">
@@ -38,21 +39,40 @@
             <li><h2 onclick="textSlider('Rock N Roll')">POP N ROLL</h2></li>
         </ul>-->
         <ul class="thumb">
-            <li><img src="images/shersha.jpg" onclick="imgSlider('images/shersha.jpg')"></li>
-            <li><img src="images/zayn2.jpg" alt="" onclick="imgSlider('images/zayn2.jpg')"></li>
-            <li><img src="images/srk.jpg" alt="" onclick="imgSlider('images/srk.jpg')"></li>
-            <li><img src="images/blackwhite.jpg" alt="" onclick="imgSlider('images/blackwhite.jpg')"></libs>
+            <li><img src="images/shersha.jpg" onclick="imgSlider('images/shersha.jpg',1)"></li>
+            <li><img src="images/zayn2.jpg" alt="" onclick="imgSlider('images/zayn2.jpg',2)"></li>
+            <li><img name='image' id='3' src="images/srk.jpg" alt="" onclick="imgSlider('images/srk.jpg',3)">
+            </li>
+            <li><img name='image' id='4' src="images/blackwhite.jpg" alt=""
+                    onclick="imgSlider('images/blackwhite.jpg',4)"></li>
         </ul>
 
     </section>
     <script>
-        function imgSlider(anything) {
-            document.querySelector('.singer').src = anything;
+        function imgSlider(imgSrc, id) {
+            document.querySelector('.singer').src = imgSrc;
+            changetext(id);
         }
-        function textSlider(anything) {
-            document.querySelector('.main-text').src = anything;
-        }
+        function changetext(id) {
 
+            if (id == 1) {
+                document.querySelector('.main-text').innerHTML = "Trending";
+                
+            }
+            else if (id == 2) {
+                document.querySelector('.main-text').innerHTML = "Rock-N-Roll";
+                
+            }
+            else if (id == 3) {
+                document.querySelector('.main-text').innerHTML = "Bollywood";
+
+            }
+
+            else if (id == 4) {
+                document.querySelector('.main-text').innerHTML = "Childhood";
+
+            }
+        } 
     </script>
 </body>
 
