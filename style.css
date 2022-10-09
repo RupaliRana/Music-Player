@@ -7,13 +7,14 @@ root color variables
     /*--main-color:#e02fc8;--*/
     --maroon: #2e0505;
     --dark-blue: #0f0e1c;
-    --red-orange: #623aa2;
+    --purple: #623aa2;
+    --violet: #5d69be;
     --royal-blue: #0b0c1d;
     --backdrop-filter-blur: blur(5px);
     --white: #fff;
     --white-alpha-40: rgba(255, 255, 255, 0.4);
-    --white-alpha-25: rgba(255, 255, 255, 0.25);
-    --black-alpha-25: rgba(13, 13, 13, 0.25);
+    --white-alpha-25: rgb(255, 255, 255);
+    --black-alpha-25: rgba(13, 13, 13, 0.167);
     --black-alpha-30: rgba(13, 13, 13, 0.366);
     --main-color-alpha: #41466a9c;
     --light-color-alpha: #f2e6fd34;
@@ -31,11 +32,12 @@ body {
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(to bottom right, #a6c1ee, #fbc2eb);
-    background-color: #5d69be;
+    background-color: #fbc2eb;
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
     padding: 5vh 15px;
+
 
 }
 
@@ -51,6 +53,7 @@ section {
     background-image: linear-gradient(to bottom left, (#5d69be), (#c89feb));
     background-size: cover;
     background-position: 5% 80%;
+    background-repeat: no-repeat;
 
 }
 
@@ -65,10 +68,13 @@ section header {
     padding: 40px 0px;
 }
 
+/*
 header ul li {
     position: relative;
     display: inline-block;
     align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-style: none;
 }
 
 header li {
@@ -93,11 +99,63 @@ header li a {
 
 header li:hover a {
     color: var(--red-orange);
+}*/
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 200px;
+    text-decoration: none;
+
 }
 
-.header .logo {
-    width: 60px;
+.logo {
+    background-color: #fff;
+    border: 0;
+    border-radius: 50%;
+    color: var(--violet);
+    font-size: 40px;
+    cursor: pointer;
+    padding: 15px 20px;
+    margin: 0 10px;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    letter-spacing: 1px;
+
+}
+
+.main-nav ul li {
+    padding: 0 10px;
+    margin-left: 60px;
+
+}
+
+.main-nav ul li a {
+    padding-bottom: 2px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-decoration-line: none;
+}
+
+
+
+.main-nav ul li a:hover {
+    color: var(--violet);
+}
+
+.main-nav a {
+    width: 100px;
+
+
     margin: 30px 0;
+    margin-left: 60px;
     cursor: pointer;
 
 }
@@ -149,9 +207,10 @@ header li:hover a {
 
 
 .content a {
-   
+
     box-shadow: 0 10px 10px 0 var(--main-color-alpha);
-    margin: 8px 30px;
+    margin: 10px 30px;
+    margin-left: 50px;
     padding: 10px 30px;
     background: #fff;
     color: #111;
@@ -165,7 +224,7 @@ header li:hover a {
 }
 
 #playlist:hover {
-    background-color: #db0f19;
+    background-color: var(--violet);
 
 }
 
