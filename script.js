@@ -12,10 +12,10 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ['Afreen-Afreen', 'Ajj_Din_Chadeya', 'Breathless', 'Raataan_Lambiyan'];
+const songs = ['Afreen-Afreen', 'Ajj_Din_Chadeya', 'Breathless', 'Chaiya-Chaiya', 'Dildara', 'Kesariya', 'Night-Changes', 'Pasoori', 'Raataan_Lambiyan', 'Waka-Waka', 'Yeh-Raatein'];
 
 // Keep track of song
-let songIndex = 3;
+let songIndex = 8;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);
